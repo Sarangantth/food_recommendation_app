@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recommendation</title>
+    <link rel="stylesheet" href="homestyle.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Discover Joyful Dining Experiences</h1>
+        <p>
+          Personalized food suggestions based on your mood, preferences, and
+          weather. Let's find your perfect meal together!
+        </p>
+        <a href="#recommend" class="cta-button">Explore Now</a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Recommendation Box -->
+      <section id="recommend" class="recommendation-box">
+        <h2>Tell Us About Your Preferences</h2>
+        <p>
+          We’ll recommend the perfect meal based on your mood, flavor craving,
+          company, and more!
+        </p>
+        <form>
+          <label for="mood">Your Mood:</label>
+          <select id="mood">
+            <option value="happy">Happy</option>
+            <option value="relaxed">Relaxed</option>
+            <option value="adventurous">Adventurous</option>
+            <option value="stressed">Stressed</option>
+          </select>
+
+          <label for="flavor">Preferred Flavor:</label>
+          <select id="flavor">
+            <option value="spicy">Spicy</option>
+            <option value="sweet">Sweet</option>
+            <option value="savory">Savory</option>
+            <option value="sour">Sour</option>
+          </select>
+
+          <label for="food-type">Type of Food:</label>
+          <select id="food-type">
+            <option value="italian">Italian</option>
+            <option value="indian">Indian</option>
+            <option value="mexican">Mexican</option>
+            <option value="japanese">Japanese</option>
+          </select>
+
+          <label for="weather">Weather:</label>
+          <select id="weather">
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="cold">Cold</option>
+          </select>
+
+          <label for="company">Dining With:</label>
+          <select id="company">
+            <option value="alone">Alone</option>
+            <option value="friends">With Friends</option>
+            <option value="family">With Family</option>
+            <option value="colleagues">With Colleagues</option>
+          </select>
+
+          <label for="location">Preferred Place:</label>
+          <select id="location">
+            <option value="restaurant">Restaurant</option>
+            <option value="cafe">Cafe</option>
+            <option value="outdoor">Outdoor Seating</option>
+            <option value="popular">Popular Spot</option>
+            <option value="rooftop">Rooftop Venue</option>
+          </select>
+
+          <button type="submit" class="recommend-btn">Recommend Me Food</button>
+        </form>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-box">
+          <h3>Mood & Flavor-Based Recommendations</h3>
+          <p>
+            We customize food suggestions to your mood and flavor cravings,
+            making every meal more enjoyable.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Weather-Specific Meals</h3>
+          <p>
+            Sunny or rainy? Get the perfect dish that complements the weather
+            and makes your meal extra special.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Group or Solo Dining</h3>
+          <p>
+            Whether you’re eating alone, with friends, family, or colleagues, we
+            recommend the best options for any occasion.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Find Popular Dining Spots</h3>
+          <p>
+            Explore top-rated local restaurants, cafes, rooftop venues, and
+            more, loved by the community.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

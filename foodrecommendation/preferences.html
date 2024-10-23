@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Preferences</title>
+    <link rel="stylesheet" href="preferenesstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>🍽 Food Preferences Survey</h2>
+      <form action="preferences.php" method="POST">
+        <div class="form-group">
+          <label for="flavor">Favorite Flavor</label>
+          <select id="flavor" name="flavor" required>
+            <option value="">Select...</option>
+            <option value="sweet">Sweet</option>
+            <option value="savory">Savory</option>
+            <option value="spicy">Spicy</option>
+            <option value="bitter">Bitter</option>
+            <option value="sour">Sour</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="food_type">Type of Food You Prefer</label>
+          <input
+            type="text"
+            id="food_type"
+            name="food_type"
+            required
+            placeholder="e.g., Italian, Asian"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mood">Mood</label>
+          <select id="mood" name="mood" required>
+            <option value="">Select...</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="adventurous">Adventurous</option>
+            <option value="relaxed">Relaxed</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="weather">Weather Condition</label>
+          <select id="weather" name="weather" required>
+            <option value="">Select...</option>
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="snowy">Snowy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="companions">Who Do You Usually Eat With?</label>
+          <input
+            type="text"
+            id="companions"
+            name="companions"
+            required
+            placeholder="e.g., Friends, Family, Alone"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dining_place">Do You Prefer Restaurants or Cafés?</label>
+          <select id="dining_place" name="dining_place" required>
+            <option value="">Select...</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="cafe">Café</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit Preferences</button>
+      </form>
+    </div>
+  </body>
+</html>
