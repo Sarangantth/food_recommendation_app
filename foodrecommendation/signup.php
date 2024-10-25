@@ -1,8 +1,8 @@
 <?php
 // Database connection
-$host = 'localhost';
-$db = 'MySQL80';
-$user = 'root';  // your MySQL username
+$host = '%saran';
+$db = 'user_management';
+$user = 'saran';  // your MySQL username
 $pass = 'Deepikasaran@2305';   // your MySQL password
 
 // Create connection
