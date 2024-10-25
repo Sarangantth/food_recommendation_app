@@ -1,0 +1,11 @@
+Pre Set-up:
+
+    Run the following commands in cmd before start runing you app.py file:
+
+        pip install Flask Flask-SQLAlchemy Flask-Bcrypt Flask-Migrate
+
+Procedure to running the program:
+
+    run the below command in terminal after pulling all the changes from git:
+
+        python app.py
