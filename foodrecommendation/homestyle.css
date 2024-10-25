@@ -34,8 +34,8 @@
   border-radius: 5px;
   margin-top: 20px;
   position: absolute; /* Position relative to the nearest positioned ancestor */
-  top: 400px; /* Moves the button down */
-  left: 687px; /* Moves the button to the right */
+  top: 56%; /* Moves the button down */
+  left: 45%; /* Moves the button to the right */
   transition: background-color 0.3s ease;
 }
 
