@@ -10,21 +10,22 @@
     <div class="container">
         <h2 class="mt-5">Welcome to Restaurant Recommendations!</h2>
         <p class="lead">Here are some restaurants you might like based on your preferences:</p>
-        <div id="recommendations">
-            {% if recommendations %}
-                <ul class="list-group">
-                    {% for restaurant in recommendations %}
-                        <li class="list-group-item">
-                            <h5>{{ restaurant.name }}</h5>
-                            <p>Cuisine: {{ restaurant.cuisine }}</p>
-                            <p>Price Range: {{ restaurant.price }}</p>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% else %}
-                <p>No recommendations available. Please set your preferences.</p>
-            {% endif %}
-        </div>
+        {% if recommendations %}
+          <ul>
+            {% for restaurant in recommendations %}
+              <li>
+                <h3>{{ restaurant['restaurant_name'] }}</h3>
+                <p>Cuisine: {{ restaurant['cuisine'] }}</p>
+                <p>Spiciness: {{ restaurant['spiciness'] }}</p>
+                <p>Location: {{ restaurant['location'] }}</p>
+                <p>Cost: ${{ restaurant['cost'] }}</p>
+                <p>Similarity Score: {{ restaurant['similarity_score'] }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No recommendations found.</p>
+        {% endif %}
     </div>
 </body>
 </html>

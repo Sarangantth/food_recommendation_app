@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preferences</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
     <div class="container">
-        <h2 class="mt-5">Set Your Preferences</h2>
-        <form action="/preferences" method="POST">
-            <div class="form-group">
-                <label for="cuisine">Preferred Cuisine Type:</label>
-                <select class="form-control" id="cuisine" name="cuisine">
-                    <option>Italian</option>
-                    <option>Chinese</option>
-                    <option>Mexican</option>
-                    <option>Indian</option>
-                    <option>Japanese</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="price-range">Preferred Price Range:</label>
-                <select class="form-control" id="price-range" name="price_range">
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Save Preferences</button>
-        </form>
+      <h2>Set Your Preferences</h2>
+      <form action="{{ url_for('preferences') }}" method="POST">
+        <div class="form-group">
+          <label for="cuisine">Cuisine</label>
+          <input type="text" id="cuisine" name="cuisine" placeholder="e.g., Indian, Italian" required />
+        </div>
+        <div class="form-group">
+          <label for="spiciness">Spiciness Level</label>
+          <select id="spiciness" name="spiciness" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Preferred Location</label>
+          <input type="text" id="location" name="location" placeholder="e.g., Downtown, Suburbs" required />
+        </div>
+        <div class="form-group">
+          <label for="cost">Preferred Cost Level</label>
+          <input type="number" id="cost" name="cost" placeholder="Average Cost" required />
+        </div>
+        <button type="submit">Save Preferences</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
