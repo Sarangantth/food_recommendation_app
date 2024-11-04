@@ -9,3 +9,9 @@ Procedure to running the program:
     run the below command in terminal after pulling all the changes from git:
 
         python app.py
+
+
+Common commands:
+
+    python -m venv venv
+    venv\Scripts\activate

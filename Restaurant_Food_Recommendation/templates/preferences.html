@@ -12,7 +12,39 @@
       <form action="{{ url_for('preferences') }}" method="POST">
         <div class="form-group">
           <label for="cuisine">Cuisine</label>
-          <input type="text" id="cuisine" name="cuisine" placeholder="e.g., Indian, Italian" required />
+          <select id="cuisine" name="cuisine" required>
+            <option value="Indian">Indian</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Fast Food">Fast Food</option>
+            <option value="Steakhouse">Steakhouse</option>
+            <option value="South Indian">South Indian</option>
+            <option value="Seafood">Seafood</option>
+            <option value="Cafe">Cafe</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Middle Eastern">Middle Eastern</option>
+            <option value="BBQ">BBQ</option>
+            <option value="Fusion">Fusion</option>
+            <option value="Continental">Continental</option>
+            <option value="Multi-cuisine">Multi-cuisine</option>
+            <option value="Fine Dining">Fine Dining</option>
+            <option value="North Indian">North Indian</option>
+            <option value="Asian">Asian</option>
+            <option value="Biryani">Biryani</option>
+            <option value="Bakery">Bakery</option>
+            <option value="Chettinad">Chettinad</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Italian">Italian</option>
+            <option value="French">French</option>
+            <option value="Thai">Thai</option>
+            <option value="Mughlai">Mughlai</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Salads">Salads</option>
+            <option value="Kebabs">Kebabs</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Punjabi">Punjabi</option>
+            <option value="Vegan">Vegan</option>
+        </select>              
         </div>
         <div class="form-group">
           <label for="spiciness">Spiciness Level</label>
@@ -24,7 +56,39 @@
         </div>
         <div class="form-group">
           <label for="location">Preferred Location</label>
-          <input type="text" id="location" name="location" placeholder="e.g., Downtown, Suburbs" required />
+          <select id="location" name="location" required>
+            <option value="Downtown">Downtown</option>
+            <option value="Suburbs">Suburbs</option>
+            <option value="T. Nagar">T. Nagar</option>
+            <option value="Marina Beach">Marina Beach</option>
+            <option value="Nungambakkam">Nungambakkam</option>
+            <option value="Adyar">Adyar</option>
+            <option value="Anna Nagar">Anna Nagar</option>
+            <option value="Besant Nagar">Besant Nagar</option>
+            <option value="Velachery">Velachery</option>
+            <option value="Kodambakkam">Kodambakkam</option>
+            <option value="OMR">OMR</option>
+            <option value="Mylapore">Mylapore</option>
+            <option value="Egmore">Egmore</option>
+            <option value="ECR">ECR</option>
+            <option value="MRC Nagar">MRC Nagar</option>
+            <option value="Kilpauk">Kilpauk</option>
+            <option value="Thoraipakkam">Thoraipakkam</option>
+            <option value="Alwarpet">Alwarpet</option>
+            <option value="Triplicane">Triplicane</option>
+            <option value="Guindy">Guindy</option>
+            <option value="Ashok Nagar">Ashok Nagar</option>
+            <option value="Chromepet">Chromepet</option>
+            <option value="Saidapet">Saidapet</option>
+            <option value="Nandanam">Nandanam</option>
+            <option value="Teynampet">Teynampet</option>
+            <option value="Thiruvanmiyur">Thiruvanmiyur</option>
+            <option value="Perungudi">Perungudi</option>
+            <option value="Pallavaram">Pallavaram</option>
+            <option value="Mandaveli">Mandaveli</option>
+            <option value="Adambakkam">Adambakkam</option>
+            <option value="Kotturpuram">Kotturpuram</option>
+        </select>              
         </div>
         <div class="form-group">
           <label for="cost">Preferred Cost Level</label>
