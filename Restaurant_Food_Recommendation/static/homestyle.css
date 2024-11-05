@@ -1,0 +1,67 @@
+/* style.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("Images/home_img3.jpeg"); /* Update with the path to your background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px; /* Maximum width for the container */
+  margin: 100px auto; /* Center the container */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* White background with slight transparency */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  color: hsl(9, 94%, 26%); /* Zomato's primary color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+p.lead {
+  text-align: center; /* Center the lead paragraph */
+  color: #0e0606; /* Darker grey for lead text */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin-bottom: 20px; /* Space between restaurant items */
+  padding: 15px; /* Inner spacing for each restaurant item */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Light background with transparency */
+  border-radius: 6px; /* Slightly rounded corners */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h3 {
+  color: #c24c38; /* Zomato's primary color for restaurant names */
+}
+
+p {
+  margin: 5px 0; /* Space above and below paragraphs */
+  color: #333; /* Dark text for general paragraphs */
+}
+
+p:last-of-type {
+  font-weight: bold; /* Make similarity score bold */
+}

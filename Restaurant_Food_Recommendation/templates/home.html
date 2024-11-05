@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='homestyle.css') }}"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h2 class="mt-5">Welcome to Restaurant Recommendations!</h2>
-        <p class="lead">Here are some restaurants you might like based on your preferences:</p>
-        {% if recommendations %}
-          <ul>
-            {% for restaurant in recommendations %}
-              <li>
-                <h3>{{ restaurant['restaurant_name'] }}</h3>
-                <p>Cuisine: {{ restaurant['cuisine'] }}</p>
-                <p>Spiciness: {{ restaurant['spiciness'] }}</p>
-                <p>Location: {{ restaurant['location'] }}</p>
-                <p>Cost: ₹ {{ restaurant['cost'] }}</p>
-                <p>Similarity Score: {{ restaurant['similarity_score'] }}</p>
-              </li>
-            {% endfor %}
-          </ul>
-        {% else %}
-          <p>No recommendations found.</p>
-        {% endif %}
+      <h2 class="mt-5">Welcome to Restaurant Recommendations!</h2>
+      <p class="lead">
+        Here are some restaurants you might like based on your preferences:
+      </p>
+      {% if recommendations %}
+      <ul>
+        {% for restaurant in recommendations %}
+        <li>
+          <h3>{{ restaurant['restaurant_name'] }}</h3>
+          <p>Cuisine: {{ restaurant['cuisine'] }}</p>
+          <p>Spiciness: {{ restaurant['spiciness'] }}</p>
+          <p>Location: {{ restaurant['location'] }}</p>
+          <p>Cost: ₹ {{ restaurant['cost'] }}</p>
+          <p>Similarity Score: {{ restaurant['similarity_score'] }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No recommendations found.</p>
+      {% endif %}
     </div>
-</body>
+  </body>
 </html>
